@@ -43,13 +43,18 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/55526926" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
   </head>
   <body data-spy="scroll" data-target="#navbar-m2in" data-offset="50">
     <nav
       id="navbar-m2in"
-      class="navbar navbar-expand-lg navbar-light bg-light text-uppercase font-weight-bold fixed-top"
+      class="navbar navbar-expand-lg navbar-dark bg-secondary text-uppercase font-weight-bold fixed-top"
     >
-      <a class="navbar-brand h1" href="#">Webmaster-2019</a>
+      <a class="navbar-brand btn btn-outline-warning" href="#"> <strong> Webmaster-2019</strong></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -65,31 +70,31 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link h4" href="#ma_22818"
-              >ma_22818 <span class="sr-only">(current)</span></a
+            <a class="nav-link btn btn-outline-warning m-2" href="#ma_22818"
+              ><strong>ma_22818</strong> <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link h4" href="#ma_32818">ma_32818</a>
+            <a class="nav-link btn btn-outline-warning m-2" href="#ma_32818"><strong>ma_32818</strong></a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link h4" href="#ma_42018">ma_42018</a>
+            <a class="nav-link btn btn-outline-warning m-2" href="#ma_42018"><strong>ma_42018</strong></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link h4" href="#ma_62017">ma_62017</a>
+            <a class="nav-link btn btn-outline-warning m-2" href="#ma_62017"><strong>ma_62017</strong></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link h4" href="#ma_62018">ma_62018</a>
+            <a class="nav-link btn btn-outline-warning m-2" href="#ma_62018"><strong>ma_62018</strong></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link h4" href="#ma_72018">ma_72018</a>
+            <a class="nav-link btn btn-outline-warning m-2" href="#ma_72018"><strong>ma_72018</strong></a>
           </li>
         </ul>
         <a
           href="http://gomel.itstep.by"
           target="_blank"
-          class="btn btn-outline-secondary mx-2"
+          class="btn btn-outline-warning mx-2"
         >
           <i class="fas fa-shoe-prints fa-2x">
             <img src="img/logostep.png" alt="Логотип Компьютерной Академии Шаг">
@@ -100,13 +105,13 @@
     <!-- ================================================================================== -->
     <header class="header container-fluid">
       <div class="row mt-5 pt-5">
-        <h1 class="col-8 pt-5 mx-auto">
-          Курс Webmaster для групп Малой Компьютерной Академии 2019 год
+        <h1 class="col-8 pt-5 mx-auto display-4"> Курс "Webmaster" для групп Малой Компьютерной Академии 2019-2020 учебный год
+          
         </h1>
       </div>
       <div class="row mb-3">
         <h3 class="h2 col-8 py-3 mx-auto">
-          <a href="http://m2in.ru" target="_blank" class="btn btn-outline-primary btn-lg font-weight-bold"
+          <a href="http://m2in.ru" target="_blank" class="btn btn-outline-primary btn-lg display-4"
             >преподаватель: Минин Дмитрий Сергеевич</a
           >
         </h3>
@@ -115,19 +120,19 @@
     <main class="section">
       <div class="container">
           <div class="row mb-3">
-              <h3 class="h2 py-3 mx-auto">
+              <h3 class="h2 py-3 mx-auto display-4">
                 План обучения простыми словами:
               </h3>
             </div>
             <div class="alert alert-success" role="alert">
-                регистрируемся на <a href="https://github.com/" target="_blank" class="btn btn-outline-success">github.com</a> <hr>
+                регистрируемся на <a href="https://github.com/" target="_blank" class="btn btn-outline-success align-baseline"><i class="fab fa-github-alt fa-2x mr-3"></i> <strong class="h2" > github.com</strong></a> <hr>
                 <div class="alert alert-warning" role="alert">
                     ЗАЧЕМ ЭТО НУЖНО? для сайта в интернете нужны хостинг и доменное имя (погугли что это)... github.com нам подарит всё это :)
                   </div>
         
               </div>
               <div class="alert alert-success" role="alert">
-                  устанавливаем редактор кода <a href="https://code.visualstudio.com/" target="_blank" class="btn btn-outline-success">Visual Studio Code</a> (я решил использовать именно его)<hr>
+                  устанавливаем редактор кода <a href="https://code.visualstudio.com/" target="_blank" class="btn btn-outline-success"><i class="fas fa-code fa-2x mr-3"></i><strong class="h2" >Visual Studio Code</strong></a> (я решил использовать именно его)<hr>
                   <div class="alert alert-warning" role="alert">
                       ЗАЧЕМ ЭТО НУЖНО? редактор - это ГЛАВНЫЙ инструмент web-мастера для создания сайта 
                     </div>
@@ -137,8 +142,10 @@
                 разбираемся из чего состоят страницы на сайте и делаем свой сайт
               </div>
       <div id="ma_22818" class="container my-5 py-5">
-        <h2 class="h1 my-5 p-3">Группа МА 22818</h2>
+        <h2 class="my-5 p-3 display-4">Группа МА 22818 <a href="http://github.com" class="btn btn-outline-secondary" target="_blank"><i class="fab fa-github-alt fa-2x"></i></a></h2>
+       
         <div class="row d-flex justify-content-between">
+         
           <div
             class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
           >
@@ -210,7 +217,7 @@
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
+                class="btn btn-lg btn-outline-danger disabled stretched-link btn-block text-uppercase"
                 >Перейти на сайт ученика</a
               >
             </div>
@@ -248,7 +255,7 @@
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
+                class="btn btn-lg btn-outline-danger disabled stretched-link btn-block text-uppercase"
                 >Перейти на сайт ученика</a
               >
             </div>
@@ -256,20 +263,13 @@
           <div
             class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
           >
-            <img
-              src="img/keep_out.jpg"
-              class="card-img-top"
-              alt="Музычкин Тимофей Филиппович"
-            />
+            
+            <i class="fas fa-window-close fa-8x btn btn-lg btn-outline-danger"></i>
             <div class="card-body">
               <h5 class="card-title">Музычкин Тимофей Филиппович</h5>
 
-              <!-- <a
-                href="#"
-                target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
-                >Перейти на сайт ученика</a
-              > -->
+              <!-- ушел  -->
+<button class="btn btn-lg btn-outline-danger btn-block disabled" title="Музычкин Тимофей Филиппович"><i class="fas fa-user-lock fa-2x"></i></button>
             </div>
           </div>
           <div
@@ -301,13 +301,8 @@
             />
             <div class="card-body">
               <h5 class="card-title">Раманенко Владислав Алексеевич</h5>
-<img src="img/keep_out_mini.jpg" class="card-img-bottom" alt="Перестал заниматься">
-              <!-- <a
-                href="#"
-                target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
-                >Перейти на сайт ученика</a
-              > -->
+<!-- ушел  -->
+<button class="btn btn-lg btn-outline-danger btn-block disabled" title="Раманенко Владислав Алексеевич"><i class="fas fa-user-lock fa-2x"></i></button>
             </div>
           </div>
           <div
@@ -324,7 +319,7 @@
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
+                class="btn btn-lg btn-outline-danger disabled stretched-link btn-block text-uppercase"
                 >Перейти на сайт ученика</a
               >
             </div>
@@ -332,20 +327,12 @@
           <div
             class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
           >
-            <img
-              src="img/keep_out.jpg"
-              class="card-img-top"
-              alt="Старостина Ксения Евгеньевна"
-            />
+          <i class="fas fa-window-close fa-8x btn btn-lg btn-outline-danger"></i>
             <div class="card-body">
               <h5 class="card-title">Старостина Ксения Евгеньевна</h5>
 
-              <!-- <a
-                href="#"
-                target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
-                >Перейти на сайт ученика</a
-              > -->
+              <!-- ушла  -->
+              <button class="btn btn-lg btn-outline-danger btn-block disabled" title="Старостина Ксения Евгеньевна"><i class="fas fa-user-lock fa-2x"></i></button>
             </div>
           </div>
           <div
@@ -381,7 +368,7 @@
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
+                class="btn btn-lg btn-outline-danger disabled stretched-link btn-block text-uppercase"
                 >Перейти на сайт ученика</a
               >
             </div>
@@ -419,7 +406,7 @@
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
+                class="btn btn-lg btn-outline-danger disabled stretched-link btn-block text-uppercase"
                 >Перейти на сайт ученика</a
               >
             </div>
@@ -446,7 +433,7 @@
         </div>
       </div>
       <div id="ma_32818" class="container my-5 py-5">
-        <h2 class="h1 my-5 p-3">Группа МА 32818</h2>
+        <h2 class="display-4 my-5 p-3">Группа МА 32818 <a href="http://github.com" class="btn btn-outline-secondary" target="_blank"><i class="fab fa-github-alt fa-2x"></i></a></h2>
         <div class="row d-flex justify-content-between">
           <div
             class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
@@ -500,7 +487,7 @@
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
+                class="btn btn-lg btn-outline-danger disabled stretched-link btn-block text-uppercase"
                 >Перейти на сайт ученика</a
               >
             </div>
@@ -622,20 +609,12 @@
           <div
             class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
           >
-            <img
-              src="img/keep_out.jpg"
-              class="card-img-top"
-              alt="Муха Елизавета Александровна"
-            />
+          <i class="fas fa-window-close fa-8x btn btn-lg btn-outline-danger"></i>
             <div class="card-body">
               <h5 class="card-title">Муха Елизавета Александровна</h5>
 
-              <!-- <a
-                href="https://liza1282549.github.io/"
-                target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
-                >Перейти на сайт ученика</a
-              > -->
+              <!-- ушла  -->
+              <button class="btn btn-lg btn-outline-danger btn-block disabled" title="Муха Елизавета Александровна"><i class="fas fa-user-lock fa-2x"></i></button>
             </div>
           </div>
           <div
@@ -671,7 +650,7 @@
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
+                class="btn btn-lg btn-outline-danger disabled stretched-link btn-block text-uppercase"
                 >Перейти на сайт ученика</a
               >
             </div>
@@ -679,20 +658,12 @@
           <div
             class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
           >
-            <img
-              src="img/keep_out.jpg"
-              class="card-img-top"
-              alt="Толкачев Матвей Витальевич"
-            />
+          <i class="fas fa-window-close fa-8x btn btn-lg btn-outline-danger"></i>
             <div class="card-body">
               <h5 class="card-title">Толкачев Матвей Витальевич</h5>
 
-              <!-- <a
-                href="#"
-                target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
-                >Перейти на сайт ученика</a
-              > -->
+              <!-- ушел  -->
+              <button class="btn btn-lg btn-outline-danger btn-block disabled" title="Толкачев Матвей Витальевич"><i class="fas fa-user-lock fa-2x"></i></button>
             </div>
           </div>
           <div
@@ -709,7 +680,7 @@
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
+                class="btn btn-lg btn-outline-danger disabled stretched-link btn-block text-uppercase"
                 >Перейти на сайт ученика</a
               >
             </div>
@@ -728,7 +699,7 @@
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
+                class="btn btn-lg btn-outline-danger disabled stretched-link btn-block text-uppercase"
                 >Перейти на сайт ученика</a
               >
             </div>
@@ -755,7 +726,7 @@
         </div>
       </div>
       <div id="ma_42018" class="container my-5 py-5">
-        <h2 class="h1 my-5 p-3">Группа МА 42018</h2>
+        <h2 class="display-4 my-5 p-3">Группа МА 42018 <a href="http://github.com" class="btn btn-outline-secondary" target="_blank"><i class="fab fa-github-alt fa-2x"></i></a></a></h2>
         <div class="row d-flex justify-content-between">
           <div
             class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
@@ -792,7 +763,7 @@
               <a
                 href="#"
                 target="_blank" title="Филончик Ксения Юрьевна"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
+                class="btn btn-lg btn-outline-danger disabled stretched-link btn-block text-uppercase"
                 >Перейти на сайт ученика</a
               >
             </div>
@@ -812,7 +783,7 @@
               <a
                 href="#"
                 target="_blank" title="Говенько Софья Александровна"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
+                class="btn btn-lg btn-outline-danger disabled stretched-link btn-block text-uppercase"
                 >Перейти на сайт ученика</a
               >
             </div>
@@ -852,7 +823,7 @@
               <a
                 href="#"
                 target="_blank" title="Груда Полина Олеговна"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
+                class="btn btn-lg btn-outline-danger disabled stretched-link btn-block text-uppercase"
                 >Перейти на сайт ученика</a
               >
             </div>
@@ -868,13 +839,9 @@
             />
             <div class="card-body">
               <h5 class="card-title">Р.О.Кирьянов</h5>
-              <img src="img/keep_out_mini.jpg" class="card-img-bottom" alt="Перестал заниматься">
-              <!-- <a
-                href="#"
-                target="_blank" title="Кирьянов Ростислав Олегович"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
-                >Перейти на сайт ученика</a
-              > -->
+              <!-- ушел  -->
+              <button class="btn btn-lg btn-outline-danger btn-block disabled" title="Кирьянов Ростислав Олегович"><i class="fas fa-user-lock fa-2x"></i></button>
+             
             </div>
           </div>
           <div
@@ -959,7 +926,7 @@
               <a
                 href="#"
                 target="_blank" title="Счастливенко Милана Дмитриевна"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
+                class="btn btn-lg btn-outline-danger disabled stretched-link btn-block text-uppercase"
                 >Перейти на сайт ученика</a
               >
             </div>
@@ -1043,7 +1010,7 @@
         </div>
       </div>
       <div id="ma_62017" class="container my-5 py-5">
-        <h2 class="h1 my-5 p-3">Группа МА 62017 <a href="http://wordpress.org" target="_blank"><img src="/img/wp-logo.png" alt="wordpress.org"></a></h2>
+        <h2 class="display-4 my-5 p-3">Группа МА 62017 <a href="http://wordpress.org" target="_blank" class="btn btn-outline-secondary"><i class="fab fa-wordpress fa-2x"></i></a></h2>
         <div class="row d-flex justify-content-between">
           <div
             class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
@@ -1154,7 +1121,7 @@
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
+                class="btn btn-lg btn-outline-danger disabled stretched-link btn-block text-uppercase"
                 >Перейти на сайт ученика</a
               >
             </div>
@@ -1211,7 +1178,7 @@
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
+                class="btn btn-lg btn-outline-danger disabled stretched-link btn-block text-uppercase"
                 >Перейти на сайт ученика</a
               >
             </div>
@@ -1238,20 +1205,12 @@
           <div
             class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
           >
-            <img
-              src="img/keep_out.jpg"
-              class="card-img-top"
-              alt="Семашев Герман Антонович"
-            />
+          <i class="fas fa-window-close fa-8x btn btn-lg btn-outline-danger"></i>
             <div class="card-body">
               <h5 class="card-title">Семашев Герман Антонович</h5>
 
-              <!-- <a
-                href="#"
-                target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
-                >Перейти на сайт ученика</a
-              > -->
+              <!-- ушел  -->
+              <button class="btn btn-lg btn-outline-danger btn-block disabled"><i class="fas fa-user-lock fa-2x"></i></button>
             </div>
           </div>
           <div
@@ -1288,7 +1247,7 @@
           <a
             href="#"
             target="_blank"
-            class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
+            class="btn btn-lg btn-outline-danger disabled stretched-link btn-block text-uppercase"
             >Перейти на сайт ученика</a
           >
         </div>
@@ -1364,7 +1323,7 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
   <a
     href="#"
     target="_blank"
-    class="btn btn-lg btn-outline-dark stretched-link btn-block text-uppercase"
+    class="btn btn-lg btn-outline-danger disabled stretched-link btn-block text-uppercase"
     >Перейти на сайт ученика</a
   >
 </div>
@@ -1372,7 +1331,7 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
         </div>
       </div>
       <div id="ma_62018" class="container my-5 py-5">
-        <h2 class="h1 my-5 p-3">Группа МА 62018 <a href="http://tilda.cc" target="_blank"><img src="/img/200px-Tilda_logo.jpg" alt="tilda.cc"></a> / <a href="http://github.com" target="_blank"><img src="/img/github_logo.jpg" alt="github.com"></a></h2>
+        <h2 class="display-4 my-5 p-3">Группа МА 62018 <a href="http://tilda.cc" class="btn btn-outline-secondary" target="_blank"><img src="/img/200px-Tilda_logo.jpg" alt="tilda.cc"></a> / <a href="http://github.com" target="_blank" class="btn btn-outline-secondary"><i class="fab fa-github-alt fa-2x"></i></a> / <a href="http://wordpress.org" target="_blank" class="btn btn-outline-secondary"><i class="fab fa-wordpress fa-2x"></i></a> / <a href="http://beget.com" target="_blank" class="btn btn-outline-secondary"><i class="fas fa-server fa-2x"></i></a></h2>
         <div class="row d-flex justify-content-between">
           <div
             class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
@@ -1389,13 +1348,19 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
                 href="https://katoma6666.github.io/"
                 target="_blank"
                 class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://garasenko.tilda.ws/"
               target="_blank"
               class="btn btn-lg btn-outline-dark btn-block text-uppercase"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1413,14 +1378,20 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                class="btn btn-lg btn-outline-danger disabled btn-block text-uppercase"
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://dzhasov.tilda.ws/"
               target="_blank"
               class="btn btn-lg btn-outline-dark btn-block text-uppercase"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1439,13 +1410,19 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
                 href="https://katoma610.github.io"
                 target="_blank"
                 class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://ezerskiy.tilda.ws"
               target="_blank"
               class="btn btn-lg btn-outline-dark btn-block text-uppercase"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1463,14 +1440,20 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                class="btn btn-lg btn-outline-danger disabled btn-block text-uppercase"
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://ivanov0.tilda.ws/"
               target="_blank"
               class="btn btn-lg btn-outline-dark btn-block text-uppercase"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1488,14 +1471,20 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                class="btn btn-lg btn-outline-danger disabled btn-block text-uppercase"
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="#"
               target="_blank"
-              class="btn btn-lg btn-outline-dark btn-block text-uppercase"
+              class="btn btn-lg btn-outline-danger disabled btn-block text-uppercase"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1513,14 +1502,20 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                class="btn btn-lg btn-outline-danger disabled btn-block text-uppercase"
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="#"
               target="_blank"
-              class="btn btn-lg btn-outline-dark btn-block text-uppercase"
+              class="btn btn-lg btn-outline-danger disabled btn-block text-uppercase"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1539,13 +1534,19 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
                 href="https://ko4ubey.github.io"
                 target="_blank"
                 class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://kothubeu.tilda.ws/"
               target="_blank"
               class="btn btn-lg btn-outline-dark btn-block text-uppercase"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1563,14 +1564,20 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                class="btn btn-lg btn-outline-danger disabled btn-block text-uppercase"
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://lazovskitop.tilda.ws"
               target="_blank"
               class="btn btn-lg btn-outline-dark btn-block text-uppercase"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1588,14 +1595,20 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                class="btn btn-lg btn-outline-danger disabled btn-block text-uppercase"
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://martynenka.tilda.ws/"
               target="_blank"
               class="btn btn-lg btn-outline-dark btn-block text-uppercase"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1614,13 +1627,19 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
                 href="https://nazarkaaaaaaaaa.github.io/"
                 target="_blank"
                 class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://m3lnikov.tilda.ws/"
               target="_blank"
               class="btn btn-lg btn-outline-dark btn-block text-uppercase"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1638,14 +1657,20 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                class="btn btn-lg btn-outline-danger disabled btn-block text-uppercase"
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://project1809796.tilda.ws/"
               target="_blank"
               class="btn btn-lg btn-outline-dark btn-block text-uppercase"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1664,7 +1689,7 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
                 href="https://Seregaaaaa.github.io"
                 target="_blank"
                 class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://shihovets.tilda.ws"
@@ -1672,12 +1697,18 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               class="btn btn-lg btn-outline-dark btn-block text-uppercase"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
             >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
+            >
             </div>
           </div>
         </div>
       </div>
       <div id="ma_72018" class="container my-5 py-5">
-        <h2 class="h1 my-5 p-3">Группа МА 72018 <a href="http://tilda.cc" target="_blank"><img src="/img/200px-Tilda_logo.jpg" alt="tilda.cc"></a> / <a href="http://github.com" target="_blank"><img src="/img/github_logo.jpg" alt="github.com"></a></h2>
+        <h2 class="display-4 my-5 p-3">Группа МА 72018 <a href="http://tilda.cc" class="btn btn-outline-secondary" target="_blank"><img src="/img/200px-Tilda_logo.jpg" alt="tilda.cc"></a> / <a href="http://github.com" target="_blank" class="btn btn-outline-secondary"><i class="fab fa-github-alt fa-2x"></i></a> / <a href="http://wordpress.org" target="_blank" class="btn btn-outline-secondary"><i class="fab fa-wordpress fa-2x"></i></a> / <a href="http://beget.com" target="_blank" class="btn btn-outline-secondary"><i class="fas fa-server fa-2x"></i></a></h2>
         <div class="row d-flex justify-content-between">
           <div
             class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
@@ -1693,14 +1724,20 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               <a
                 href="https://baidun1234.github.io/"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                class="btn btn-lg btn-outline-dark btn-block"
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://belselhozresurs.ru.tilda.ws/"
               target="_blank"
-              class="btn btn-lg btn-outline-dark btn-block text-uppercase"
+              class="btn btn-lg btn-outline-dark btn-block"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1718,14 +1755,20 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                class="btn btn-lg btn-outline-danger disabled btn-block"
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://lol2280124.tilda.ws/"
               target="_blank"
-              class="btn btn-lg btn-outline-dark btn-block text-uppercase"
+              class="btn btn-lg btn-outline-dark btn-block"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1743,14 +1786,20 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               <a
                 href="https://verdani08.github.io/"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                class="btn btn-lg btn-outline-dark btn-block"
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://veretilo.tilda.ws"
               target="_blank"
-              class="btn btn-lg btn-outline-dark btn-block text-uppercase"
+              class="btn btn-lg btn-outline-dark btn-block"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1768,40 +1817,32 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                class="btn btn-lg btn-outline-danger disabled btn-block"
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="#"
               target="_blank"
-              class="btn btn-lg btn-outline-dark btn-block text-uppercase"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
           <div
             class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
           >
-            <img
-              src="img/keep_out.jpg"
-              class="card-img-top"
-              alt="Курако Назар Юрьевич"
-            />
+          <i class="fas fa-window-close fa-8x btn btn-lg btn-outline-danger"></i>
             <div class="card-body">
               <h5 class="card-title">Курако Назар Юрьевич</h5>
 
-              <!-- <a
-                href="#"
-                target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
-              >
-              <a
-              href="#"
-              target="_blank"
-              class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-              ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
-            > -->
+              <!-- ушел  -->
+              <button class="btn btn-lg btn-outline-danger btn-block disabled"><i class="fas fa-user-lock fa-4x"></i></button>
             </div>
           </div>
           <div
@@ -1818,14 +1859,20 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                class="btn btn-lg btn-outline-danger disabled btn-block"
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://lazben.tilda.ws/"
               target="_blank"
-              class="btn btn-lg btn-outline-dark btn-block text-uppercase"
+              class="btn btn-lg btn-outline-dark btn-block"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1843,14 +1890,20 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                class="btn btn-lg btn-outline-danger disabled btn-block"
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://lapitskiy.tilda.ws"
               target="_blank"
-              class="btn btn-lg btn-outline-dark btn-block text-uppercase"
+              class="btn btn-lg btn-outline-dark btn-block"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1868,14 +1921,20 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               <a
                 href="https://nagornuk.github.io/"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                class="btn btn-lg btn-outline-dark btn-block"
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://nikecomjojojoj.tilda.ws"
               target="_blank"
-              class="btn btn-lg btn-outline-dark btn-block text-uppercase"
+              class="btn btn-lg btn-outline-dark btn-block"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1893,14 +1952,20 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               <a
                 href="https://wikdhdhf.github.io/"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                class="btn btn-lg btn-outline-dark btn-block"
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://plyaskina.tilda.ws/"
               target="_blank"
-              class="btn btn-lg btn-outline-dark btn-block text-uppercase"
+              class="btn btn-lg btn-outline-dark btn-block"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1918,14 +1983,20 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                class="btn btn-lg btn-outline-danger disabled btn-block"
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://romanova1805.tilda.ws"
               target="_blank"
-              class="btn btn-lg btn-outline-dark btn-block text-uppercase"
+              class="btn btn-lg btn-outline-dark btn-block"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1943,14 +2014,20 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                class="btn btn-lg btn-outline-danger disabled btn-block"
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://satsukevich.tilda.ws/"
               target="_blank"
-              class="btn btn-lg btn-outline-dark btn-block text-uppercase"
+              class="btn btn-lg btn-outline-dark btn-block"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1968,14 +2045,20 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               <a
                 href="https://timasto.github.io/"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                class="btn btn-lg btn-outline-dark btn-block"
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://bicraft.tilda.ws/"
               target="_blank"
-              class="btn btn-lg btn-outline-dark btn-block text-uppercase"
+              class="btn btn-lg btn-outline-dark btn-block"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="http://l44518at.beget.tech/"
+              target="_blank"
+              class="btn btn-lg btn-outline-dark btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -1993,14 +2076,20 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                class="btn btn-lg btn-outline-danger disabled btn-block"
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://olegus.tilda.ws/"
               target="_blank"
-              class="btn btn-lg btn-outline-dark btn-block text-uppercase"
+              class="btn btn-lg btn-outline-dark btn-block"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
@@ -2018,14 +2107,20 @@ class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
               <a
                 href="https://facebook228666.github.io/"
                 target="_blank"
-                class="btn btn-lg btn-outline-dark btn-block text-uppercase"
-                ><img src="img/github_logo.jpg" alt="github.com"></a
+                class="btn btn-lg btn-outline-dark btn-block"
+                ><i class="fab fa-github-alt fa-2x"></i></a
               >
               <a
               href="http://flegentov.tilda.ws"
               target="_blank"
-              class="btn btn-lg btn-outline-dark btn-block text-uppercase"
+              class="btn btn-lg btn-outline-dark btn-block"
               ><img src="img/200px-Tilda_logo.jpg" alt="tilda.cc"></a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-lg btn-outline-danger disabled btn-block"
+              ><i class="fab fa-wordpress fa-2x"></i></a
             >
             </div>
           </div>
