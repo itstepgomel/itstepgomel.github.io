@@ -1,5 +1,10 @@
+/* html {
+  scroll-behavior: smooth;
+} */
+
 .header {
-  background-color: #b8c9f1;
+  /* background-color: #b8c9f1; */
+  padding: 0;
 }
 
 footer {
@@ -8,4 +13,36 @@ footer {
 
 h2 {
   background: #d1d1d1; /* Цвет фона */
+}
+
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #222;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+.myanimate .large-header {
+  background: rgb(56, 55, 64);
+  background: linear-gradient(
+    90deg,
+    rgba(56, 55, 64, 1) 0%,
+    rgba(10, 27, 34, 1) 49%,
+    rgba(10, 20, 87, 1) 100%
+  );
+}
+
+.main-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
 }
