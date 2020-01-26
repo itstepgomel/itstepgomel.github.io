@@ -11,6 +11,11 @@ footer {
   background-color: #b8b8b8;
 }
 
+.h2_me {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
 h2 {
   background: #d1d1d1; /* Цвет фона */
 }
