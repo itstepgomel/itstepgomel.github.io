@@ -51,3 +51,7 @@ h2 {
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
 }
+
+.card img {
+  height: 200px;
+}
