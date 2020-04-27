@@ -1,0 +1,28 @@
+.topNavMenu{
+  list-style: none;
+  display: flex;
+}
+.topNavMenu li{
+  margin-left: 25px;
+}
+
+.topNavMenu li a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.topNavMenu li a::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  transform: translateY(20px) scale(0);
+  transition: all 0.8s;
+}
+
+.topNavMenu li a:hover::after{
+  transform: translateY(30px) scale(1)
+}
