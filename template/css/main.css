@@ -1,0 +1,164 @@
+/* общие настройки сайта */
+body,
+* {
+  font-family: "Arial", sans-serif;
+}
+/* первая секция сайта -------------------------- */
+.quest {
+  color: #0d0d0d;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.phone a {
+  color: #0d0d0d;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.phone p,
+.send p {
+  margin: 0;
+  padding: 0;
+}
+
+.send,
+.phone {
+  text-align: right;
+}
+.mail a {
+  color: #368c02;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+/* -------------------------- настройка меню ---------- */
+.mecolor {
+  background-color: #368c02;
+}
+
+.menav-link {
+  text-decoration: underline;
+}
+/* ----------------------- продающий экран ------------ */
+.baner {
+  background-image: url("../img/bg-1.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  padding-bottom: 44px;
+}
+
+.baner h1,
+.baner h2 {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #368c02;
+  font-weight: bold;
+}
+
+.baner h1 {
+  font-size: 40px;
+}
+
+.baner h2 {
+  font-size: 35px;
+}
+
+.baner p {
+  font-size: 29px;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+.baner form {
+  /* outline: 1px solid red; */
+  width: 640px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding-bottom: 43px;
+}
+
+.baner form input {
+  height: 56px;
+}
+
+.baner form h3 {
+  font-weight: bold;
+  margin-top: 41px;
+  font-size: 30px;
+}
+
+.baner form .row input {
+  margin-top: 41px;
+  background-color: #ccc;
+  border-radius: 5px;
+  font-style: italic;
+}
+
+#banerTel {
+  margin-left: 15px;
+}
+
+.baner form .btn {
+  width: 300px;
+  margin: 43px auto 0 auto;
+}
+/* ------------------------ О Нас ---------------- */
+.aboute {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.aboute h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  font-size: 36px;
+}
+
+.aboute .item {
+  width: 40px;
+  height: 40px;
+  margin-top: 30px;
+}
+
+.wrapperImg {
+  width: 101px;
+  height: 101px;
+  margin: 0 auto;
+  border: 2px solid #368c02;
+  border-radius: 50%;
+}
+
+.aboute .card {
+  border: none;
+}
+/* ------------------ Заявка ---------------- */
+.order {
+  background-image: url("../img/bg-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.order_iner {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.order_iner h2 {
+  padding-top: 80px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.order_iner p {
+  font-size: 33px;
+}
