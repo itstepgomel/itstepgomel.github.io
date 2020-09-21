@@ -52,8 +52,74 @@ h2 {
   transform: translate3d(-50%, -50%, 0);
 }
 
-.card img {
-  height: 200px;
+.card img, .card .imgFoto {
+  height: 300px;
+}
+
+.item1{
+  background-image: url("https://mystatfiles.itstep.org/photos/gom/stud/s_2569.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item2{
+  background-image: url("https://mystatfiles.itstep.org/photos/gom/stud/s_2275.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item3{
+  background-image: url("https://mystatfiles.itstep.org/photos/gom/stud/s_2589.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item4{
+  background-image: url("https://mystatfiles.itstep.org/photos/gom/stud/s_2585.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item5{
+  background-image: url("https://logbook.itstep.org/photos/anonymous.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item6{
+  background-image: url("https://mystatfiles.itstep.org/photos/gom/stud/s_2551.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item7{
+  background-image: url("https://mystatfiles.itstep.org/photos/gom/stud/s_2138.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item8{
+  background-image: url("https://mystatfiles.itstep.org/photos/gom/stud/s_2314.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item9{
+  background-image: url("https://mystatfiles.itstep.org/photos/gom/stud/s_2458.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item10{
+  background-image: url("https://mystatfiles.itstep.org/photos/gom/stud/s_2516.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item11{
+  background-image: url("https://mystatfiles.itstep.org/photos/gom/stud/s_1738.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 iframe {
