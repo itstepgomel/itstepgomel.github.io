@@ -1,588 +1,348 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <!-- подключаем иконочный шрифт -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/icon" href="favicon.ico" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>
-      курс Основы HTML5 и CSS3 - стационар П11018 - преподаватель Д.С.Минин
-    </title>
-    <!-- подключаю свои стили для корректировки сайта -->
-    <link rel="stylesheet" href="css/main.css" />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-      (function (m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function () {
-            (m[i].a = m[i].a || []).push(arguments);
-          };
-        m[i].l = 1 * new Date();
-        (k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a);
-      })(
-        window,
-        document,
-        "script",
-        "https://mc.yandex.ru/metrika/tag.js",
-        "ym"
-      );
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- подключаем иконочный шрифт -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/icon" href="favicon.ico" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>
+    курс Основы HTML5 и CSS3 - стационар П11018 - преподаватель Д.С.Минин
+  </title>
+  <!-- подключаю свои стили для корректировки сайта -->
+  <link rel="stylesheet" href="css/main.css" />
 
-      ym(55526926, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-      });
-    </script>
-    <noscript
-      ><div>
-        <img
-          src="https://mc.yandex.ru/watch/55526926"
-          style="position: absolute; left: -9999px;"
-          alt=""
-        /></div
-    ></noscript>
-    <!-- /Yandex.Metrika counter -->
-    <script>
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-      });
-    </script>
-  </head>
-  <body data-spy="scroll" data-target="#navbar-m2in" data-offset="50">
-    <nav
-      id="navbar-m2in"
-      class="navbar navbar-expand-lg navbar-dark bg-secondary text-uppercase font-weight-bold fixed-top"
-    >
-      <a class="navbar-brand btn btn-outline-warning active" href="index.html">
-        <strong>Webmaster</strong></a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] =
+        m[i] ||
+        function () {
+          (m[i].a = m[i].a || []).push(arguments);
+        };
+      m[i].l = 1 * new Date();
+      (k = e.createElement(t)),
+        (a = e.getElementsByTagName(t)[0]),
+        (k.async = 1),
+        (k.src = r),
+        a.parentNode.insertBefore(k, a);
+    })(
+      window,
+      document,
+      "script",
+      "https://mc.yandex.ru/metrika/tag.js",
+      "ym"
+    );
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle btn btn-outline-warning m-2"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <strong>МКА-2019</strong>
-            </a>
-            <div
-              class="dropdown-menu bg-warning"
-              aria-labelledby="navbarDropdown"
-            >
-              <a class="dropdown-item" href="ma22818.html"
-                ><strong>ma_22818</strong></a
-              >
-              <a class="dropdown-item" href="ma32818.html"
-                ><strong>ma_32818</strong></a
-              >
-              <a class="dropdown-item" href="ma42018.html"
-                ><strong>ma_42018</strong></a
-              >
+    ym(55526926, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+    });
+  </script>
+  <noscript>
+    <div>
+      <img src="https://mc.yandex.ru/watch/55526926" style="position: absolute; left: -9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+</head>
 
-              <a class="dropdown-item" href="ma62018.html"
-                ><strong>ma_62018</strong></a
-              >
-              <a class="dropdown-item" href="ma72018.html"
-                ><strong>ma_72018</strong></a
-              >
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="ma62017.html"
-                ><strong>ma_62017</strong></a
-              >
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle btn btn-outline-warning m-2"
-              href="#"
-              id="navbarDropdown2"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <strong>СТ-2020</strong>
-            </a>
-            <div
-              class="dropdown-menu bg-warning"
-              aria-labelledby="navbarDropdown2"
-            >
-              <a class="dropdown-item" href="p11018.html"
-                ><strong>П11018</strong></a
-              >
-              <a class="dropdown-item" href="p22018.html"
-                ><strong>П22018</strong></a
-              >
-            </div>
-          </li>
-        </ul>
-        <a
-          href="http://gomel.itstep.by"
-          target="_blank"
-          class="btn btn-outline-warning mx-2"
-        >
-          <i class="fas fa-shoe-prints fa-2x">
-            <img
-              src="img/logostep.png"
-              alt="Логотип Компьютерной Академии Шаг"
-            />
-          </i>
-        </a>
-      </div>
-    </nav>
-    <!-- ================================================================================== -->
+<body data-spy="scroll" data-target="#navbar-m2in" data-offset="50">
+  <nav id="navbar-m2in"
+    class="navbar navbar-expand-lg navbar-dark bg-secondary text-uppercase font-weight-bold fixed-top">
+    <a class="navbar-brand btn btn-outline-warning active" href="index.html">
+      <strong>Webmaster</strong></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <main class="section">
-      <div id="ma_22818" class="container my-5 py-5">
-        <h2 class="my-5 p-3">
-          Группа П11018
-          <a
-            href="http://github.com"
-            class="btn btn-outline-secondary"
-            target="_blank"
-            ><i class="fab fa-github-alt fa-2x"></i
-          ></a>
-          /
-          <a
-            href="https://discord.gg/M2yhJGE"
-            class="btn btn-outline-secondary"
-            target="_blank"
-            title="Чат группы"
-            ><i class="fab fa-discord fa-2x"></i
-          ></a>
-        </h2>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle btn btn-outline-warning m-2" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <strong>МКА-2019</strong>
+          </a>
+          <div class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="ma22818.html"><strong>ma_22818</strong></a>
+            <a class="dropdown-item" href="ma32818.html"><strong>ma_32818</strong></a>
+            <a class="dropdown-item" href="ma42018.html"><strong>ma_42018</strong></a>
 
-        <div class="row d-flex justify-content-between">
-          <div
-            class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
-          >
-            <img
+            <a class="dropdown-item" href="ma62018.html"><strong>ma_62018</strong></a>
+            <a class="dropdown-item" href="ma72018.html"><strong>ma_72018</strong></a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="ma62017.html"><strong>ma_62017</strong></a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle btn btn-outline-warning m-2" href="#" id="navbarDropdown2" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <strong>СТ-2020</strong>
+          </a>
+          <div class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown2">
+            <a class="dropdown-item" href="p11018.html"><strong>П11018</strong></a>
+            <a class="dropdown-item" href="p22018.html"><strong>П22018</strong></a>
+          </div>
+        </li>
+      </ul>
+      <a href="http://gomel.itstep.by" target="_blank" class="btn btn-outline-warning mx-2">
+        <i class="fas fa-shoe-prints fa-2x">
+          <img src="img/logostep.png" alt="Логотип Компьютерной Академии Шаг" />
+        </i>
+      </a>
+    </div>
+  </nav>
+  <!-- ================================================================================== -->
+
+  <main class="section">
+    <div id="ma_22818" class="container my-5 py-5">
+      <h2 class="my-5 p-3">
+        Группа П11018
+        <a href="http://github.com" class="btn btn-outline-secondary" target="_blank"><i
+            class="fab fa-github-alt fa-2x"></i></a>
+        <!-- /
+        <a href="https://discord.gg/M2yhJGE" class="btn btn-outline-secondary" target="_blank" title="Чат группы"><i
+            class="fab fa-discord fa-2x"></i></a> -->
+      </h2>
+
+      <div class="row d-flex justify-content-between">
+        <div class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded">
+          <div class="imgFoto card-img-top item1"></div>
+          <!-- <img
               src="https://mystatfiles.itstep.org/photos/gom/stud/s_2569.jpg"
               class="card-img-top"
               alt="Грек Тихон Викторович"
-            />
-            <div class="card-body text-center text-center">
-              <h5 class="card-title">Грек Тихон Викторович</h5>
-              <p class="card-text">Сайт ученика</p>
-              <a
-                href="https://tikhon-ql.github.io/"
-                target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link"
-                ><i class="fab fa-github-alt fa-2x"></i
-              ></a>
-            </div>
+            /> -->
+          <div class="card-body text-center text-center">
+            <h5 class="card-title">Грек Тихон Викторович</h5>
+            <p class="card-text">Сайт ученика</p>
+            <a href="https://tikhon-ql.github.io/" target="_blank" class="btn btn-lg btn-outline-dark stretched-link"><i
+                class="fab fa-github-alt fa-2x"></i></a>
           </div>
-          <div
-            class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
-          >
-            <img
-              src="https://mystatfiles.itstep.org/photos/gom/stud/s_2275.jpg"
-              class="card-img-top"
-              alt="Капатков Константин Васильевич"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Капатков Константин Васильевич</h5>
-              <p class="card-text">Сайт ученика</p>
-              <a
-                href="https://kotkatlv.github.io/"
-                target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link"
-                ><i class="fab fa-github-alt fa-2x"></i
-              ></a>
-            </div>
+        </div>
+        <div class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded">
+          <div class="imgFoto card-img-top item2"></div>
+          <!-- <img src="https://mystatfiles.itstep.org/photos/gom/stud/s_2275.jpg" class="card-img-top"
+            alt="Капатков Константин Васильевич" /> -->
+          <div class="card-body text-center">
+            <h5 class="card-title">Капатков Константин Васильевич</h5>
+            <p class="card-text">Сайт ученика</p>
+            <a href="https://kotkatlv.github.io/" target="_blank" class="btn btn-lg btn-outline-dark stretched-link"><i
+                class="fab fa-github-alt fa-2x"></i></a>
           </div>
-          <div
-            class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
-          >
-            <img
-              src="https://mystatfiles.itstep.org/photos/gom/stud/s_2589.jpg"
-              class="card-img-top"
-              alt="Кислицкий Владислав Викторович"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Кислицкий Владислав Викторович</h5>
-              <p class="card-text">Сайт ученика</p>
-              <a
-                href="https://inoy-crypton.github.io/"
-                target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link"
-                ><i class="fab fa-github-alt fa-2x"></i
-              ></a>
-            </div>
+        </div>
+        <div class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded">
+          <div class="imgFoto card-img-top item3"></div>
+          <!-- <img src="https://mystatfiles.itstep.org/photos/gom/stud/s_2589.jpg" class="card-img-top"
+            alt="Кислицкий Владислав Викторович" /> -->
+          <div class="card-body text-center">
+            <h5 class="card-title">Кислицкий Владислав Викторович</h5>
+            <p class="card-text">Сайт ученика</p>
+            <a href="https://inoy-crypton.github.io/" target="_blank"
+              class="btn btn-lg btn-outline-dark stretched-link"><i class="fab fa-github-alt fa-2x"></i></a>
           </div>
-          <div
-            class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
-          >
-            <img
-              src="https://mystatfiles.itstep.org/photos/gom/stud/s_2585.jpg"
-              class="card-img-top"
-              alt="Колыбенко Александр Викторович"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Колыбенко Александр Викторович</h5>
-              <p class="card-text">Сайт ученика</p>
-              <a
-                href="https://kolyb.github.io/"
-                target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link"
-                ><i class="fab fa-github-alt fa-2x"></i
-              ></a>
-            </div>
+        </div>
+        <div class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded">
+          <div class="imgFoto card-img-top item4"></div>
+          <!-- <img src="https://mystatfiles.itstep.org/photos/gom/stud/s_2585.jpg" class="card-img-top"
+            alt="Колыбенко Александр Викторович" /> -->
+          <div class="card-body text-center">
+            <h5 class="card-title">Колыбенко Александр Викторович</h5>
+            <p class="card-text">Сайт ученика</p>
+            <a href="https://kolyb.github.io/" target="_blank" class="btn btn-lg btn-outline-dark stretched-link"><i
+                class="fab fa-github-alt fa-2x"></i></a>
           </div>
-          <div
-            class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
-          >
-            <img
-              src="https://logbook.itstep.org/photos/anonymous.png"
-              class="card-img-top"
-              alt="Коржов Роман Сергеевич"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Коржов Роман Сергеевич</h5>
-              <p class="card-text">Сайт ученика</p>
-              <a
-                href="https://zalgor94.github.io/"
-                target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link"
-                ><i class="fab fa-github-alt fa-2x"></i
-              ></a>
-            </div>
+        </div>
+        <div class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded">
+          <div class="imgFoto card-img-top item5"></div>
+          <!-- <img src="https://logbook.itstep.org/photos/anonymous.png" class="card-img-top"
+            alt="Коржов Роман Сергеевич" /> -->
+          <div class="card-body text-center">
+            <h5 class="card-title">Коржов Роман Сергеевич</h5>
+            <p class="card-text">Сайт ученика</p>
+            <a href="https://zalgor94.github.io/" target="_blank" class="btn btn-lg btn-outline-dark stretched-link"><i
+                class="fab fa-github-alt fa-2x"></i></a>
           </div>
-          <div
-            class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
-          >
-            <img
-              src="https://mystatfiles.itstep.org/photos/gom/stud/s_2551.jpg"
-              class="card-img-top"
-              alt="Радченко Даниил Владимирович"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Радченко Даниил Владимирович</h5>
-              <p class="card-text">Сайт ученика</p>
-              <a
-                href="https://danila032040.github.io/"
-                target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link"
-                ><i class="fab fa-github-alt fa-2x"></i
-              ></a>
-            </div>
+        </div>
+        <div class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded">
+          <div class="imgFoto card-img-top item6"></div>
+          <!-- <img src="https://mystatfiles.itstep.org/photos/gom/stud/s_2551.jpg" class="card-img-top"
+            alt="Радченко Даниил Владимирович" /> -->
+          <div class="card-body text-center">
+            <h5 class="card-title">Радченко Даниил Владимирович</h5>
+            <p class="card-text">Сайт ученика</p>
+            <a href="https://danila032040.github.io/" target="_blank"
+              class="btn btn-lg btn-outline-dark stretched-link"><i class="fab fa-github-alt fa-2x"></i></a>
           </div>
-          <div
-            class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
-          >
-            <img
-              src="https://mystatfiles.itstep.org/photos/gom/stud/s_2138.jpg"
-              class="card-img-top"
-              alt="Рожков Максим Сергеевич"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Рожков Максим Сергеевич</h5>
-              <p class="card-text">Сайт ученика</p>
-              <a
-                href="https://maximxp.github.io/"
-                target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link"
-                ><i class="fab fa-github-alt fa-2x"></i
-              ></a>
-            </div>
+        </div>
+        <div class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded">
+          <div class="imgFoto card-img-top item7"></div>
+          <!-- <img src="https://mystatfiles.itstep.org/photos/gom/stud/s_2138.jpg" class="card-img-top"
+            alt="Рожков Максим Сергеевич" /> -->
+          <div class="card-body text-center">
+            <h5 class="card-title">Рожков Максим Сергеевич</h5>
+            <p class="card-text">Сайт ученика</p>
+            <a href="https://maximxp.github.io/" target="_blank" class="btn btn-lg btn-outline-dark stretched-link"><i
+                class="fab fa-github-alt fa-2x"></i></a>
           </div>
-          <div
-            class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
-          >
-            <img
-              src="https://mystatfiles.itstep.org/photos/gom/stud/s_2314.jpg"
-              class="card-img-top"
-              alt="Сасина Олеся Викторовна"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Сасина Олеся Викторовна</h5>
-              <p class="card-text">Сайт ученика</p>
-              <a
-                href="https://alesiasasina.github.io"
-                target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link"
-                ><i class="fab fa-github-alt fa-2x"></i
-              ></a>
-            </div>
+        </div>
+        <div class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded">
+          <div class="imgFoto card-img-top item8"></div>
+          <!-- <img src="https://mystatfiles.itstep.org/photos/gom/stud/s_2314.jpg" class="card-img-top"
+            alt="Сасина Олеся Викторовна" /> -->
+          <div class="card-body text-center">
+            <h5 class="card-title">Сасина Олеся Викторовна</h5>
+            <p class="card-text">Сайт ученика</p>
+            <a href="https://alesiasasina.github.io" target="_blank"
+              class="btn btn-lg btn-outline-dark stretched-link"><i class="fab fa-github-alt fa-2x"></i></a>
           </div>
-          <div
-            class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
-          >
-            <img
-              src="https://mystatfiles.itstep.org/photos/gom/stud/s_2458.jpg"
-              class="card-img-top"
-              alt="Сафронов Владислав Игоревич"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Сафронов Владислав Игоревич</h5>
-              <p class="card-text">Сайт ученика</p>
-              <a
-                href="https://marokkostar.github.io"
-                target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link"
-                ><i class="fab fa-github-alt fa-2x"></i
-              ></a>
-            </div>
+        </div>
+        <div class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded">
+          <div class="imgFoto card-img-top item9"></div>
+          <!-- <img src="https://mystatfiles.itstep.org/photos/gom/stud/s_2458.jpg" class="card-img-top"
+            alt="Сафронов Владислав Игоревич" /> -->
+          <div class="card-body text-center">
+            <h5 class="card-title">Сафронов Владислав Игоревич</h5>
+            <p class="card-text">Сайт ученика</p>
+            <a href="https://marokkostar.github.io" target="_blank"
+              class="btn btn-lg btn-outline-dark stretched-link"><i class="fab fa-github-alt fa-2x"></i></a>
           </div>
-          <div
-            class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
-          >
-            <img
-              src="https://mystatfiles.itstep.org/photos/gom/stud/s_2516.jpg"
-              class="card-img-top"
-              alt="Селеня Владислав Сергеевич"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Селеня Владислав Сергеевич</h5>
-              <p class="card-text">Сайт ученика</p>
-              <a
-                href="https://selllll.github.io/"
-                target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link"
-                ><i class="fab fa-github-alt fa-2x"></i
-              ></a>
-            </div>
+        </div>
+        <div class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded">
+          <div class="imgFoto card-img-top item10"></div>
+          <!-- <img src="https://mystatfiles.itstep.org/photos/gom/stud/s_2516.jpg" class="card-img-top"
+            alt="Селеня Владислав Сергеевич" /> -->
+          <div class="card-body text-center">
+            <h5 class="card-title">Селеня Владислав Сергеевич</h5>
+            <p class="card-text">Сайт ученика</p>
+            <a href="https://selllll.github.io/" target="_blank" class="btn btn-lg btn-outline-dark stretched-link"><i
+                class="fab fa-github-alt fa-2x"></i></a>
           </div>
-          <div
-            class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
-          >
-            <img
-              src="https://mystatfiles.itstep.org/photos/gom/stud/s_1738.jpg"
-              class="card-img-top"
-              alt="Щетинин Игорь Александрович"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Щетинин Игорь Александрович</h5>
-              <p class="card-text">Сайт ученика</p>
-              <a
-                href="https://iaschetinin.github.io"
-                target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link"
-                ><i class="fab fa-github-alt fa-2x"></i
-              ></a>
-            </div>
+        </div>
+        <div class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded">
+          <div class="imgFoto card-img-top item11"></div>
+          <!-- <img src="https://mystatfiles.itstep.org/photos/gom/stud/s_1738.jpg" class="card-img-top"
+            alt="Щетинин Игорь Александрович" /> -->
+          <div class="card-body text-center">
+            <h5 class="card-title">Щетинин Игорь Александрович</h5>
+            <p class="card-text">Сайт ученика</p>
+            <a href="https://iaschetinin.github.io" target="_blank"
+              class="btn btn-lg btn-outline-dark stretched-link"><i class="fab fa-github-alt fa-2x"></i></a>
           </div>
-          <div
-            class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded"
-          >
-            <i
-              class="far fa-smile-wink fa-8x btn btn-lg btn-outline-danger"
-            ></i>
-            <div class="card-body text-center">
-              <h5 class="card-title">Джокер ;)</h5>
-              <p class="card-text">Сайт ученика</p>
-              <a
-                href="#"
-                target="_blank"
-                class="btn btn-lg btn-outline-dark stretched-link"
-                ><i class="fab fa-github-alt fa-2x"></i
-              ></a>
-            </div>
+        </div>
+        <div class="card col-md-4 col-sm-5 col-lg-3 px-0 m-2 shadow mb-4 bg-white rounded">
+          <i class="far fa-smile-wink fa-8x btn btn-lg btn-outline-danger"></i>
+          <div class="card-body text-center">
+            <h5 class="card-title">Джокер ;)</h5>
+            <p class="card-text">Сайт ученика</p>
+            <a href="#" target="_blank" class="btn btn-lg btn-outline-dark stretched-link"><i
+                class="fab fa-github-alt fa-2x"></i></a>
           </div>
         </div>
       </div>
-    </main>
-    <footer class="container-fluid mt-5 py-5 text-center">
-      <h6>Все права принадлежат разработчику ресурса</h6>
-      <!-- start menu footer -->
-      <div class="container">
-        <div class="row">
-          <nav
-            id="navbar-m2in-footer"
-            class="navbar navbar-expand-lg navbar-light text-uppercase offset-1 col-10"
-          >
-            <a class="navbar-brand badge badge-light active" href="index.html"
-              >Webmaster</a
-            >
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarFooter"
-              aria-controls="navbarFooter"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+    </div>
+  </main>
+  <footer class="container-fluid mt-5 py-5 text-center">
+    <h6>Все права принадлежат разработчику ресурса</h6>
+    <!-- start menu footer -->
+    <div class="container">
+      <div class="row">
+        <nav id="navbar-m2in-footer" class="navbar navbar-expand-lg navbar-light text-uppercase offset-1 col-10">
+          <a class="navbar-brand badge badge-light active" href="index.html">Webmaster</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarFooter"
+            aria-controls="navbarFooter" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <div
-              class="collapse navbar-collapse justify-content-end"
-              id="navbarFooter"
-            >
-              <ul class="nav navbar-nav">
-                <li class="nav-item dropup">
-                  <a
-                    class="nav-link dropdown-toggle badge badge-light"
-                    href="#"
-                    id="navbarUp"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    МКА-2019
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarUp">
-                    <a
-                      class="dropdown-item badge badge-light"
-                      href="ma22818.html"
-                      ><strong>ma_22818</strong></a
-                    >
-                    <a
-                      class="dropdown-item badge badge-light"
-                      href="ma32818.html"
-                      ><strong>ma_32818</strong></a
-                    >
-                    <a
-                      class="dropdown-item badge badge-light"
-                      href="ma42018.html"
-                      ><strong>ma_42018</strong></a
-                    >
+          <div class="collapse navbar-collapse justify-content-end" id="navbarFooter">
+            <ul class="nav navbar-nav">
+              <li class="nav-item dropup">
+                <a class="nav-link dropdown-toggle badge badge-light" href="#" id="navbarUp" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  МКА-2019
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarUp">
+                  <a class="dropdown-item badge badge-light" href="ma22818.html"><strong>ma_22818</strong></a>
+                  <a class="dropdown-item badge badge-light" href="ma32818.html"><strong>ma_32818</strong></a>
+                  <a class="dropdown-item badge badge-light" href="ma42018.html"><strong>ma_42018</strong></a>
 
-                    <a
-                      class="dropdown-item badge badge-light"
-                      href="ma62018.html"
-                      ><strong>ma_62018</strong></a
-                    >
-                    <a
-                      class="dropdown-item badge badge-light"
-                      href="ma72018.html"
-                      ><strong>ma_72018</strong></a
-                    >
-                    <div class="dropdown-divider"></div>
-                    <a
-                      class="dropdown-item badge badge-light"
-                      href="ma62017.html"
-                      ><strong>ma_62017</strong></a
-                    >
-                  </div>
-                </li>
-                <li class="nav-item dropup ml-2">
-                  <a
-                    class="nav-link dropdown-toggle badge badge-light"
-                    href="#"
-                    id="navbarUp2"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <strong>СТ-2020</strong>
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarUp2">
-                    <a
-                      class="dropdown-item badge badge-light"
-                      href="p11018.html"
-                      ><strong>П11018</strong></a
-                    >
-                    <a
-                      class="dropdown-item badge badge-light"
-                      href="p22018.html"
-                      ><strong>П22018</strong></a
-                    >
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
+                  <a class="dropdown-item badge badge-light" href="ma62018.html"><strong>ma_62018</strong></a>
+                  <a class="dropdown-item badge badge-light" href="ma72018.html"><strong>ma_72018</strong></a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item badge badge-light" href="ma62017.html"><strong>ma_62017</strong></a>
+                </div>
+              </li>
+              <li class="nav-item dropup ml-2">
+                <a class="nav-link dropdown-toggle badge badge-light" href="#" id="navbarUp2" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <strong>СТ-2020</strong>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarUp2">
+                  <a class="dropdown-item badge badge-light" href="p11018.html"><strong>П11018</strong></a>
+                  <a class="dropdown-item badge badge-light" href="p22018.html"><strong>П22018</strong></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <!-- end menu footer -->
-      <div class="container-fluid">
-        <div class="row">
-          <!-- Yandex.Metrika informer -->
-          <a
-            href="https://metrika.yandex.ru/stat/?id=55526926&amp;from=informer"
-            target="_blank"
-            rel="nofollow"
-            ><img
-              src="https://informer.yandex.ru/informer/55526926/2_0_FFFFFFFF_EFEFEFFF_0_pageviews"
-              style="width: 80px; height: 31px; border: 0;"
-              alt="Яндекс.Метрика"
-              title="Яндекс.Метрика: данные за сегодня (просмотры)"
-          /></a>
-          <!-- /Yandex.Metrika informer -->
-        </div>
+    </div>
+    <!-- end menu footer -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Yandex.Metrika informer -->
+        <a href="https://metrika.yandex.ru/stat/?id=55526926&amp;from=informer" target="_blank" rel="nofollow"><img
+            src="https://informer.yandex.ru/informer/55526926/2_0_FFFFFFFF_EFEFEFFF_0_pageviews"
+            style="width: 80px; height: 31px; border: 0;" alt="Яндекс.Метрика"
+            title="Яндекс.Метрика: данные за сегодня (просмотры)" /></a>
+        <!-- /Yandex.Metrika informer -->
       </div>
-    </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <!-- скрипты первого анимированного экрана -->
-    <script src="js/TweenLite.min.js"></script>
-    <script src="js/EasePack.min.js"></script>
-    <script src="js/myanimate.js"></script>
-    <!-- скрипт плавной прокрутки по якорям -->
-    <!--       <script src="js/scrolljq.js" type="text/javascript"></script> -->
-    <!-- чат -->
-    <script>
-      window.replainSettings = { id: "446677c9-58c7-40d7-b1a8-4536987dfb27" };
-      (function (u) {
-        var s = document.createElement("script");
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = u;
-        var x = document.getElementsByTagName("script")[0];
-        x.parentNode.insertBefore(s, x);
-      })("https://widget.replain.cc/dist/client.js");
-    </script>
-  </body>
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- скрипты первого анимированного экрана -->
+  <script src="js/TweenLite.min.js"></script>
+  <script src="js/EasePack.min.js"></script>
+  <script src="js/myanimate.js"></script>
+  <!-- скрипт плавной прокрутки по якорям -->
+  <!--       <script src="js/scrolljq.js" type="text/javascript"></script> -->
+  <!-- чат -->
+  <script>
+    window.replainSettings = { id: "446677c9-58c7-40d7-b1a8-4536987dfb27" };
+    (function (u) {
+      var s = document.createElement("script");
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = u;
+      var x = document.getElementsByTagName("script")[0];
+      x.parentNode.insertBefore(s, x);
+    })("https://widget.replain.cc/dist/client.js");
+  </script>
+</body>
+
 </html>
